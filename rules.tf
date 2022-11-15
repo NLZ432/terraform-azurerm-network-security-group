@@ -54,7 +54,7 @@ variable "rules" {
     FTP = ["Inbound", "Allow", "TCP", "*", "21", "FTP"]
 
     #HTTP
-    HTTP = ["Inbound", "Allow", "TCP", "*", "80", "HTTP"]
+    HTTP = ["Inbound", "Allow", "Tcp", "*", "80", "HTTP"]
 
     #HTTPS
     HTTPS = ["Inbound", "Allow", "TCP", "*", "443", "HTTPS"]
@@ -117,7 +117,7 @@ variable "rules" {
     SMTPS = ["Inbound", "Allow", "TCP", "*", "465", "SMTPS"]
 
     #SSH
-    SSH = ["Inbound", "Allow", "TCP", "*", "22", "SSH"]
+    SSH = ["Inbound", "Allow", "Tcp", "*", "22", "SSH"]
 
     #WinRM
     WinRM = ["Inbound", "Allow", "TCP", "*", "5986", "WinRM"]
